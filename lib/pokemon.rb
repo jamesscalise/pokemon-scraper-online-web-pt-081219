@@ -26,6 +26,8 @@ class Pokemon
     
     row = db.execute(sql, id)[0]
     
+    binding.pry
+    
     pokemon = Pokemon.new(row[1],row[2], id, db)
     pokemon
   end
