@@ -28,7 +28,7 @@ class Pokemon
     
     binding.pry
     
-    pokemon = Pokemon.new(row[1],row[2], id, db)
+    pokemon = Pokemon.new(name: row[1],type: row[2], id: id, db: db)
     pokemon
   end
 end
